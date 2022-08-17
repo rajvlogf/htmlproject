@@ -1,0 +1,343 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Verdana;
+}
+:root
+{
+    --color : #0652DD;
+    --bg: #FDA7DF;
+    --bgc: #D980FA;
+    --color1: #f5f6fa;
+    --bc: #ccc;
+    --g: #a8a8a8;
+}
+
+.slidebar
+{
+    width:345px;
+    position: fixed;
+    height:100%;
+    background: var(--color);
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.sidebar-brand
+{
+    height:90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: var(--color1);
+}
+.sidebar-brand i
+{
+    display: inline-block;
+    padding-right: 1rem;
+}
+.sidebar-menu
+{
+    margin-top: 1rem;
+}
+.sidebar-menu li
+{
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 1rem;
+}
+.sidebar-menu a
+{
+    padding-left: 1rem;
+    display: block;
+    color: var(--color1);
+    font-size: 1.1rem;
+    
+}
+.sidebar-menu a.active
+{
+    background-color: var(--color1);
+    color: var(--color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px 0 0 30px;
+}
+.sidebar-menu a:hover
+{
+    background: var(--color1);
+    color: var(--color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px 0 0 30px;
+}
+.sidebar-menu a span:first-child
+{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+
+}
+.main-content
+{
+    margin-left: 345px;
+}
+.fa-bars:hover .sidebar
+{
+    width: 80px;
+
+}
+
+header
+{
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    left: 345px;
+    position: fixed;
+    width: calc(100% - 345px);
+    top: 0;
+    z-index: 100;
+    background-color: #353b48;
+}
+
+header h3
+{
+    font-size: 2rem;
+    color: var(--color)
+}
+header span
+{
+    text-transform: capitalize;
+}
+.search-wrapper
+{   
+    border: 1px solid var(--bc);
+    border-radius: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.search-wrapper i
+{
+    padding-left:1rem;
+}
+.search-wrapper input
+{
+    height: 100%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.search-wrapper input::placeholder
+{
+    text-transform: capitalize;
+}
+.user-wrapper
+{
+    display: flex;
+    align-items: center;
+    color: var(--color);
+}
+.user-wrapper img
+{
+    border-radius: 50%;
+}
+.user-wrapper h4
+{
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left:1rem;
+    padding-right:1rem;
+    font-size: 0.8rem;
+
+}
+.user-wrapper small
+{
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--g)
+}
+
+main
+{
+    margin-top: 75px;
+    padding: 2rem 1.5rem;
+    background: #f0f0f0;
+    min-height: calc(100vh - 75px);
+}
+.cards
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:2rem;
+}
+.card-single
+{
+    display: flex;
+    justify-content:space-between;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.card-single div:last-child i
+{
+    font-size: 3rem;
+    color: var(--color)
+}
+.card-single div:first-child span
+{
+    color: var(--g);
+}
+.card-single:last-child
+{
+    background: var(--color);
+    color: #fff;
+}
+.card-single:last-child div:last-child i
+{
+    color: #fff;
+}
+table
+{
+    width: 100%;
+}
+.recent-flex
+{
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-gap: 2rem;
+}
+.card
+{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.card-header,
+.card-body
+{
+    padding: 1rem;
+}
+
+.card-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table
+{
+    text-indent: 0;
+    border-collapse: collapse;
+}
+table thead
+{
+    background-color: var(--g);
+    color: var(--color);
+}
+table thead th
+{
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size:1rem;
+}
+table tbody tr td
+{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    /* background-color: #D980FA; */
+}
+table tbody tr:hover
+{
+    background-color: var(--color);
+    color: var(--color1);
+}
+
+.status
+{
+    width: 100%;
+    height: 15px;
+    margin-left: 1.5rem;
+    box-sizing: border-box;
+    display: block;
+    padding-top: 1rem;
+
+}
+.icon
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    padding-top: 1rem;
+    position: relative;
+    padding-top: 1rem;
+}
+.review
+{
+    background-color: #e1cd4c;
+}
+.progress
+{
+    background-color: #b96e11;
+}
+.pending
+{
+    background-color: #ca2b22;
+}
+.done
+{
+    background-color: #22be42;
+}
+
+.recent-flex .projects .card .card-header h2
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.customer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card h3
+{
+    text-align: center;
+    text-transform: uppercase;
+    color: #0652DD;
+}
+.customer h4
+{
+    text-align: left;
+    text-transform: capitalize;
+}
+.customer small
+{
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0 0.2rem;
+}
+.customer div:last-child
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer div:last-child i
+{
+    padding: 0 0.5rem;
+    color: #0652DD;
+}
